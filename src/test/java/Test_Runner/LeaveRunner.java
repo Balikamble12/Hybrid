@@ -20,7 +20,7 @@ public class LeaveRunner extends Apputils {
 	public void driverinit() {
 		lm=new Leave_page(driver);
 	}
-	@Test(priority=1)
+	@Test
 
 	public void Leave_functionlity() throws InterruptedException {
 		
@@ -31,7 +31,8 @@ public class LeaveRunner extends Apputils {
 	lm.clickOnRejectedStatus();
 	lm.UserSelectLeaveEmpName();
 	lm.ClickOnPastEmployees();
-	System.out.println("Leaverunner run priority =1");
+	System.out.println("Leave_functionlity");
+	
 	}
 	
 	

@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-All_Scenarios" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,21 @@
                       <a href="#" panel-name="suite-All_Scenarios" class="show-methods passed suite-All_Scenarios"> (show)</a> <!-- show-methods passed suite-All_Scenarios -->
                     </span>
                     <div class="method-list-content passed suite-All_Scenarios">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Scenarios" title="Test_Runner.DirectioryRunner" class="method navigator-link" hash-for-method="Directory_functionlity(user3)">Directory_functionlity(user3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Scenarios" title="Test_Runner.DirectioryRunner" class="method navigator-link" hash-for-method="Directory_functionlity(user1)">Directory_functionlity(user1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Scenarios" title="Test_Runner.DirectioryRunner" class="method navigator-link" hash-for-method="Directory_functionlity(user2)">Directory_functionlity(user2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Scenarios" title="Test_Runner.LeaveRunner" class="method navigator-link" hash-for-method="Leave_functionlity">Leave_functionlity</a> <!-- method navigator-link -->
@@ -136,14 +151,14 @@
           <div class="suite-All_Scenarios-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_Runner.LeaveRunner</span>
+              <span class="class-name">Test_Runner.PIMRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Leave_functionlity">
-                  </a> <!-- Leave_functionlity -->
-                  <span class="method-name">Leave_functionlity</span>
+                  <a name="ValidatePIMfunctionlity">
+                  </a> <!-- ValidatePIMfunctionlity -->
+                  <span class="method-name">ValidatePIMfunctionlity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,14 +188,46 @@
           <div class="suite-All_Scenarios-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_Runner.PIMRunner</span>
+              <span class="class-name">Test_Runner.DirectioryRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidatePIMfunctionlity">
-                  </a> <!-- ValidatePIMfunctionlity -->
-                  <span class="method-name">ValidatePIMfunctionlity</span>
+                  <a name="Directory_functionlity(user3)">
+                  </a> <!-- Directory_functionlity(user3) -->
+                  <span class="method-name">Directory_functionlity</span>
+                  <span class="parameters">(user3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Directory_functionlity(user1)">
+                  </a> <!-- Directory_functionlity(user1) -->
+                  <span class="method-name">Directory_functionlity</span>
+                  <span class="parameters">(user1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Directory_functionlity(user2)">
+                  </a> <!-- Directory_functionlity(user2) -->
+                  <span class="method-name">Directory_functionlity</span>
+                  <span class="parameters">(user2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Scenarios-class-passed -->
+          <div class="suite-All_Scenarios-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test_Runner.LeaveRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Leave_functionlity">
+                  </a> <!-- Leave_functionlity -->
+                  <span class="method-name">Leave_functionlity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,17 +241,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;All Scenarios&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;All Scenarios&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;User check Admin Module and leave module&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User check Admin Module and leave module&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test_Runner.AdminRunner&quot;/&gt;
       &lt;class name=&quot;Test_Runner.LeaveRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- User check Admin Module and leave module --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;User check PIM module&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User check PIM module&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test_Runner.PIMRunner&quot;/&gt;
+      &lt;class name=&quot;Test_Runner.DirectioryRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- User check PIM module --&gt;
 &lt;/suite&gt; &lt;!-- All Scenarios --&gt;
@@ -221,7 +269,7 @@
                 <span class="test-name">User check Admin Module and leave module (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">User check PIM module (1 class)</span>
+                <span class="test-name">User check PIM module (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,6 +279,18 @@
             <span class="header-content">Groups for All Scenarios</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">UservalidateusernameClear</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ValidateAdminFunctionlity</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-All_Scenarios" class="panel">
@@ -247,28 +307,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Leave_functionlity')
 data.setCell(0, 2, 'Test_Runner.LeaveRunner')
-data.setCell(0, 3, 17957);
+data.setCell(0, 3, 17566);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ValidateAdminFunctionlity')
 data.setCell(1, 2, 'Test_Runner.AdminRunner')
-data.setCell(1, 3, 6110);
+data.setCell(1, 3, 6275);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ValidatePIMfunctionlity')
-data.setCell(2, 2, 'Test_Runner.PIMRunner')
-data.setCell(2, 3, 3562);
+data.setCell(2, 1, 'Directory_functionlity')
+data.setCell(2, 2, 'Test_Runner.DirectioryRunner')
+data.setCell(2, 3, 4924);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'UservalidateusernameClear')
-data.setCell(3, 2, 'Test_Runner.AdminRunner')
-data.setCell(3, 3, 1737);
+data.setCell(3, 1, 'Directory_functionlity')
+data.setCell(3, 2, 'Test_Runner.DirectioryRunner')
+data.setCell(3, 3, 4857);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Directory_functionlity')
+data.setCell(4, 2, 'Test_Runner.DirectioryRunner')
+data.setCell(4, 3, 4706);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ValidatePIMfunctionlity')
+data.setCell(5, 2, 'Test_Runner.PIMRunner')
+data.setCell(5, 3, 3731);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UservalidateusernameClear')
+data.setCell(6, 2, 'Test_Runner.AdminRunner')
+data.setCell(6, 3, 1290);
 window.suiteTableData['All_Scenarios']= { tableData: data, tableDiv: 'times-div-All_Scenarios'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-All_Scenarios">
               </div> <!-- times-div-All_Scenarios -->
             </div> <!-- times-div -->
@@ -283,9 +355,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Scenarios" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Test_Runner.DirectioryRunner</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">BeforeSuitmehtod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Test_Runner.LeaveRunner</span>
               <div class="ignored-methods-div">
@@ -311,109 +390,140 @@ return data;
               <div class="chronological-class-name">Test_Runner.AdminRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Beforeclassmethod</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">69 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.PIMRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">Beforeclassmethod</span>
-                <span class="method-start">44 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.AdminRunner</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApp(chrome)</span>
-                <span class="method-start">54 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.PIMRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">LaunchApp(chrome)</span>
-                <span class="method-start">54 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.AdminRunner</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">8687 ms</span>
+                <span class="method-start">7332 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UservalidateusernameClear</span>
-                <span class="method-start">8692 ms</span>
+                <span class="method-start">7340 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.PIMRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">driversetup</span>
-                <span class="method-start">9211 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ValidatePIMfunctionlity</span>
-                <span class="method-start">9217 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.AdminRunner</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">close([TestResult name=UservalidateusernameClear status=SUCCESS method=AdminRunner.UservalidateusernameCle...)</span>
-                <span class="method-start">10432 ms</span>
+                <span class="method-start">8630 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApp(chrome)</span>
+                <span class="method-start">8834 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">14755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateAdminFunctionlity</span>
+                <span class="method-start">14757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close([TestResult name=ValidateAdminFunctionlity status=SUCCESS method=AdminRunner.ValidateAdminFunctionli...)</span>
+                <span class="method-start">21032 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test_Runner.LeaveRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Beforeclassmethod</span>
-                <span class="method-start">10881 ms</span>
+                <span class="method-start">21226 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApp(chrome)</span>
-                <span class="method-start">10882 ms</span>
+                <span class="method-start">21227 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.PIMRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">close([TestResult name=ValidatePIMfunctionlity status=SUCCESS method=PIMRunner.ValidatePIMfunctionlity()[p...)</span>
-                <span class="method-start">12785 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.LeaveRunner</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">driverinit</span>
-                <span class="method-start">16258 ms</span>
+                <span class="method-start">29844 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Leave_functionlity</span>
-                <span class="method-start">16272 ms</span>
+                <span class="method-start">29861 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">close([TestResult name=Leave_functionlity status=SUCCESS method=LeaveRunner.Leave_functionlity()[pri:1, in...)</span>
-                <span class="method-start">34231 ms</span>
+                <span class="method-name">close([TestResult name=Leave_functionlity status=SUCCESS method=LeaveRunner.Leave_functionlity()[pri:0, in...)</span>
+                <span class="method-start">47428 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.AdminRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test_Runner.PIMRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Beforeclassmethod</span>
+                <span class="method-start">47704 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApp(chrome)</span>
-                <span class="method-start">34441 ms</span>
+                <span class="method-start">47705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">initPage</span>
-                <span class="method-start">38456 ms</span>
+                <span class="method-name">driversetup</span>
+                <span class="method-start">54473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ValidateAdminFunctionlity</span>
-                <span class="method-start">38461 ms</span>
+                <span class="method-name">ValidatePIMfunctionlity</span>
+                <span class="method-start">54476 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">close([TestResult name=ValidateAdminFunctionlity status=SUCCESS method=AdminRunner.ValidateAdminFunctionli...)</span>
-                <span class="method-start">44587 ms</span>
+                <span class="method-name">close([TestResult name=ValidatePIMfunctionlity status=SUCCESS method=PIMRunner.ValidatePIMfunctionlity()[p...)</span>
+                <span class="method-start">58210 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test_Runner.DirectioryRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Beforeclassmethod</span>
+                <span class="method-start">58444 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApp(chrome)</span>
+                <span class="method-start">58449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetup</span>
+                <span class="method-start">64904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Directory_functionlity(user1)</span>
+                <span class="method-start">64908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close([TestResult name=Directory_functionlity status=SUCCESS method=DirectioryRunner.Directory_functionlit...)</span>
+                <span class="method-start">69767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApp(chrome)</span>
+                <span class="method-start">69966 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Directory_functionlity(user2)</span>
+                <span class="method-start">75093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetup</span>
+                <span class="method-start">75093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">close([TestResult name=Directory_functionlity status=SUCCESS method=DirectioryRunner.Directory_functionlit...)</span>
+                <span class="method-start">80019 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApp(chrome)</span>
+                <span class="method-start">80195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Directory_functionlity(user3)</span>
+                <span class="method-start">86278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetup</span>
+                <span class="method-start">86278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">close([TestResult name=Directory_functionlity status=SUCCESS method=DirectioryRunner.Directory_functionlit...)</span>
+                <span class="method-start">90990 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

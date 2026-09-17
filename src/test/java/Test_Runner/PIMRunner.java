@@ -17,7 +17,7 @@ public class PIMRunner extends Apputils {
 		pm= new PIM_page(driver);
 	}
 
-	@Test(priority=3)
+	@Test
 	public void ValidatePIMfunctionlity() throws FileNotFoundException {
 		
 	pm.UserClickOnPIM();

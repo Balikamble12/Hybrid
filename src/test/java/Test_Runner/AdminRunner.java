@@ -20,7 +20,7 @@ public class AdminRunner extends Apputils {
 	   ad = new Admin_page(driver);  // driver is already initialized in Baseclass
 	    }
 	 
-	@Test(priority=2)
+	@Test(enabled= true, groups= "smoke")
 	public void ValidateAdminFunctionlity() throws InterruptedException {
 		
 		ad.userClickOnAdminButton();
@@ -30,15 +30,18 @@ public class AdminRunner extends Apputils {
 		ad.UserSelectStatus();
 		ad.UserClickOnSearch();
 		ad.userValidateaAdminRecord();
-		System.out.println("adminrunner run priority =2");}
+		System.out.println("adminrunner run priority =2");
+				}
 		
 		
-	@Test
+	@Test(enabled= true, groups= "smoke")
 public void UservalidateusernameClear() throws InterruptedException {
 ad.userClickOnAdminButton();
 ad.UserEnterAdminUserName();
 ad.UserClearAdminUsername();
 ad.UserValidateUsernameblank();
+System.out.println("adminrunner run priority=1");
+		
 	
 }
 	

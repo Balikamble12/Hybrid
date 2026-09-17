@@ -3,8 +3,8 @@
 
     <suite-files>
 
-  <suite-file path="AdminSuite"/>
-  <suite-file path="LeaveSuite"/>
+  <suite-file name="AdminSuite"/>
+  <suite-file name="LeaveSuite"/>
 
 
 </suite-files>

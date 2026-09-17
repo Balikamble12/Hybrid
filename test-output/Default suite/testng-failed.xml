@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Runner.PIMRunner">
+      <class name="Test_Runner.DirectioryRunner">
         <methods>
           <include name="Beforeclassmethod"/>
-          <include name="driversetup"/>
-          <include name="ValidatePIMfunctionlity"/>
           <include name="BeforeSuitmehtod"/>
+          <include name="driversetup"/>
           <include name="close"/>
+          <include name="Directory_functionlity"/>
           <include name="LaunchApp"/>
         </methods>
-      </class> <!-- Test_Runner.PIMRunner -->
+      </class> <!-- Test_Runner.DirectioryRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

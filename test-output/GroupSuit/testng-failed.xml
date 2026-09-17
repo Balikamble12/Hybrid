@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Scenarios]" guice-stage="DEVELOPMENT">
-  <parameter name="Browser" value="chrome"/>
-  <test thread-count="5" name="smoke(failed)">
+<suite name="Failed suite [GroupSuit]">
+  <test thread-count="5" name="Smoke test(failed)">
     <groups>
       <run>
         <include name="smoke"/>
@@ -16,5 +15,5 @@
         </methods>
       </class> <!-- Test_Runner.AdminRunner -->
     </classes>
-  </test> <!-- smoke(failed) -->
-</suite> <!-- Failed suite [All Scenarios] -->
+  </test> <!-- Smoke test(failed) -->
+</suite> <!-- Failed suite [GroupSuit] -->
