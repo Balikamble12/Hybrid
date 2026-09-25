@@ -64,7 +64,7 @@ public class Admin_page {
 
 	public void userEnterEmpName() {
 		AdminempName.sendKeys("Suresh Babu");
-
+System.out.println("test");
 	}
 
 	public void UserSelectStatus() throws InterruptedException {
