@@ -63,6 +63,7 @@ public class Admin_page {
 
 	public void userSelectUserRole() {
    util.dropdowntext(Adminuserrole, "Admin");
+   System.out.println("user select role");
 	}
 
 	public void userEnterEmpName() {
