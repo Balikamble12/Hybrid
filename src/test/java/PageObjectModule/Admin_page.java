@@ -17,13 +17,13 @@ import Utility.readconfig;
 public class Admin_page {
 
 	WebDriver driver;
-	Baseclass util= new Baseclass();
+	Baseclass util = new Baseclass();
 	readconfig config = new readconfig();
 
-	@FindBy(id ="menu_admin_viewAdminModule")
+	@FindBy(id = "menu_admin_viewAdminModule")
 	WebElement AdminButton;
-	
-	@FindBy(id="searchSystemUser_userName")
+
+	@FindBy(id = "searchSystemUser_userName")
 	WebElement AdminUserName;
 
 	@FindBy(id = "searchSystemUser_userType")
@@ -43,9 +43,6 @@ public class Admin_page {
 
 	@FindBy(xpath = "//a[contains(text(),'Admin')]")
 	WebElement AdminRecord;
-	
-	
-
 
 	public Admin_page(WebDriver driver) {
 		this.driver = driver;
@@ -53,8 +50,8 @@ public class Admin_page {
 	}
 
 	public void userClickOnAdminButton() throws InterruptedException {
-	AdminButton.click();
-		
+		AdminButton.click();
+
 	}
 
 	public void UserEnterAdminUserName() throws InterruptedException {
@@ -62,8 +59,7 @@ public class Admin_page {
 	}
 
 	public void userSelectUserRole() {
-   util.dropdowntext(Adminuserrole, "Admin");
-   System.out.println("user select role");
+		util.dropdowntext(Adminuserrole, "Admin");
 	}
 
 	public void userEnterEmpName() {
@@ -72,37 +68,34 @@ System.out.println("test");
 	}
 
 	public void UserSelectStatus() throws InterruptedException {
-		
-		util.dropdowntext(AdminUserstatus,"Enabled" );
 
+		util.dropdowntext(AdminUserstatus, "Enabled");
+		System.out.println("Demo");
 	}
 
 	public void UserClickOnSearch() throws InterruptedException {
 		Thread.sleep(4000);
 		AdminSearhButton.click();
-	System.out.println("supper demo");
+		System.out.println("supper demo");
 	}
 
 	public void userValidateaAdminRecord() {
 
 		String text = AdminRecord.getText();
 
-		System.out.println( "i found record as "+ text);
-		
-		
+		System.out.println("i found record as " + text);
+
 	}
 
 	public void UserClearAdminUsername() {
-		
+
 		AdminUserName.clear();
-	
-}
-	public void UserValidateUsernameblank() {
-		String text= AdminUserName.getText();
-		Assert.assertEquals(text, "");	
+
 	}
-	
+
+	public void UserValidateUsernameblank() {
+		String text = AdminUserName.getText();
+		Assert.assertEquals(text, "");
+	}
 
 }
-
-
