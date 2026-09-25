@@ -70,13 +70,32 @@ public class Admin_page {
 	public void UserSelectStatus() throws InterruptedException {
 
 		util.dropdowntext(AdminUserstatus, "Enabled");
-		System.out.println("Demo");
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	public void UserClickOnSearch() throws InterruptedException {
 		Thread.sleep(4000);
 		AdminSearhButton.click();
 		System.out.println("supper demo");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	public void userValidateaAdminRecord() {
