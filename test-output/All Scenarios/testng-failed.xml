@@ -2,19 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Scenarios]" guice-stage="DEVELOPMENT">
   <parameter name="Browser" value="chrome"/>
-  <test thread-count="5" name="smoke(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="User check PIM module(failed)">
     <classes>
-      <class name="Test_Runner.AdminRunner">
+      <class name="Test_Runner.DirectioryRunner">
         <methods>
-          <include name="ValidateAdminFunctionlity"/>
-          <include name="UservalidateusernameClear"/>
+          <include name="Beforeclassmethod"/>
+          <include name="BeforeSuitmehtod"/>
+          <include name="driversetup"/>
+          <include name="Directory_functionlity" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="LaunchApp"/>
         </methods>
-      </class> <!-- Test_Runner.AdminRunner -->
+      </class> <!-- Test_Runner.DirectioryRunner -->
     </classes>
-  </test> <!-- smoke(failed) -->
+  </test> <!-- User check PIM module(failed) -->
 </suite> <!-- Failed suite [All Scenarios] -->
