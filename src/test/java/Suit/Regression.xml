@@ -12,13 +12,13 @@
 		</classes>
 
    </test>
-	<tests  name="AdminModule">
+	<test  name="AdminModule">
 	 <classes >
 	  <class name="Test_Runner.AdminRunner"></class>
 	 
 	 </classes>
 	
-	</tests>
+	</test>
 	
 
 </suite>
