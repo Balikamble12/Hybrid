@@ -83,7 +83,7 @@
             <version>3.5.3</version>
           <configuration>
            <suiteXmlFiles>
-            <suiteXmlFile>src/test/java/Suit/Suite.xml</suiteXmlFile>
+            <suiteXmlFile>src/test/java/Suit/leave.xml</suiteXmlFile>
           </suiteXmlFiles>
            </configuration>
           
