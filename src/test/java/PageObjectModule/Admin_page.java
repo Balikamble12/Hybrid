@@ -71,12 +71,31 @@ System.out.println("test");
 
 		util.dropdowntext(AdminUserstatus, "Enabled");
 		System.out.println("Demo");
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	public void UserClickOnSearch() throws InterruptedException {
 		Thread.sleep(4000);
 		AdminSearhButton.click();
 		System.out.println("supper demo");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	public void userValidateaAdminRecord() {

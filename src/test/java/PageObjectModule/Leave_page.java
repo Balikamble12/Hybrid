@@ -149,6 +149,7 @@ import Utility.Apputils;
 		public void ClickOnPastEmployees() throws InterruptedException {
 			Thread.sleep(2000);
 			includePastEmpCheckbox.click();
+			System.out.println("user clicked on past employees");
 		}
 		
 	}
